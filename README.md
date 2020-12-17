@@ -10,6 +10,7 @@ https://github.com/primecoin/primecoin
 
 ## Dependencies
 This project requires Node.js, SpartanGold, and all of SpartanGold's dependencies. After cloning this repository you can fetch dependencies with:
+
 ``
 $ npm update
 ``
@@ -36,6 +37,7 @@ Like SpartanGold, SpartanGoldPrime can be run in either single-threaded mode wit
 
 ### Single-threaded Mode
 Same as base project SpartanGold, run in command line:
+
 ``
 $ node driver.js
 ``
@@ -67,6 +69,7 @@ Starting Minnie
 ```
 
 Choose p to dump prime chain info to JSON. This new JSON file does not have complete prime chains enumerated out and needs to be built. The mining client does not take the time to build the full prime chains as it is usually busy trying to mine said prime chains in the background. To build the prime chains from a file `primes.json`, run in command line:
+
 ``
 $ node buildPrimeChains.js primes.json
 ``
