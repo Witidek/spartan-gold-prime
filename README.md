@@ -15,6 +15,12 @@ This project requires Node.js, SpartanGold, and all of SpartanGold's dependencie
 $ npm update
 ``
 
+Alternatively, just install the spartan-gold package:
+
+``
+$ npm install spartan-gold
+``
+
 ## Implementation Details at a Glance
 Cunningham chains of both kinds and bi-twin chains are the accepted types of prime chains.
 https://en.wikipedia.org/wiki/Cunningham_chain
