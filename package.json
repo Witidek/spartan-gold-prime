@@ -1,0 +1,15 @@
+{
+  "name": "spartan-gold-prime",
+  "version": "1.0.0",
+  "description": "A proof-of-work alternative using prime number chains for the simplified cryptocurrency spartan-gold",
+  "main": "index.js",
+  "dependencies": {
+    "spartan-gold": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Dishen Zhao",
+  "license": "ISC"
+}
