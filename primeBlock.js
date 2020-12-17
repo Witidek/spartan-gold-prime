@@ -26,19 +26,16 @@ module.exports = class PrimeBlock extends Block {
     // Check block header hash has at least 200 bits
     let blockHeaderHash = new BigInteger(this.hashHeader(), 16);
     if (blockHeaderHash.compareTo(PrimeBlockchain.BLOCK_HEADER_HASH_MIN) < 0) {
-      console.log("failed hash");
       return false;
     }
 
     // Check that prime chain length found meets target
     if (this.primeChainLength < this.target) {
-      console.log("failed length", this.primeChainLength, this.target);
       return false;
     }
 
     // Check that multiplier is not less than 2
     if (this.primeMultiplier.compareTo(Prime.BI_TWO) < 0) {
-      console.log("failed multiplier");
       return false;
     }
 

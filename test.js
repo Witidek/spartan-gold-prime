@@ -201,7 +201,6 @@ describe('PrimeClient', () => {
     });
 
     it("should store all valid blocks, but only change lastBlock if the newer block is better.", () => {
-      console.log("start problematic area");
       let b = new PrimeBlock(addr, genesis, EASY_POW_TARGET);
       b.addTransaction(t);
       // Finding a proof.
